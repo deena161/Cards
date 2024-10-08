@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d6d7e;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.child1{
+    background-image: url("https://img.freepik.com/free-vector/monkey-rides-motorcycle-cartoon-character_1308-75151.jpg?size=626&ext=jpg");
+}
+.child2{
+    background-image: url("https://img.freepik.com/free-photo/fun-3d-cartoon-teenage-boy_183364-80095.jpg?size=626&ext=jpg");
+}
+.child3{
+    background-image: url("https://img.freepik.com/free-vector/cute-happy-smiling-child-isolated-white_1308-32243.jpg?size=626&ext=jpg&ga=GA1.1.869497398.1726629687&semt=ais_hybrid");
+}
+.child4{
+    background-image: url("https://img.freepik.com/premium-vector/cartoon-man-with-beard-mustache_481747-98950.jpg?size=626&ext=jpg&ga=GA1.1.869497398.1726629687&semt=ais_hybrid");
+}
+.child5{
+    background-image: url("https://img.freepik.com/premium-vector/cartoon-drawing-elephant-with-blue-eyes-black-nose_1016520-64509.jpg?size=626&ext=jpg&ga=GA1.1.869497398.1726629687&semt=ais_hybrid");
+}
+.child6{
+    background-image: url("https://img.freepik.com/premium-vector/adorable-elephant-with-laptop-glasses-vector-graphic_1080480-84586.jpg?size=626&ext=jpg&ga=GA1.1.869497398.1726629687&semt=ais_hybrid");
+}
+.child7{
+    background-image: url("https://img.freepik.com/free-vector/cheerful-cartoon-tiger-cub-sitting_1308-162293.jpg?size=626&ext=jpg&ga=GA1.1.869497398.1726629687&semt=ais_hybrid");
+}
+.child8{
+    background-image: url("https://img.freepik.com/free-vector/cheerful-young-girl-sitting-illustration_1308-163518.jpg?size=626&ext=jpg&ga=GA1.1.869497398.1726629687&semt=ais_hybrid");
+}
+
+.child{
+    width: 150px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0);
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.child:hover{
+    filter: brightness(1);
+    transform: scale(1.16);
+    z-index: 1;
+}
+
+.child:hover+*{
+    filter: brightness(0.3);
+    transform: rotatey(16deg) scale(1.12);
+    z-index: 0;
+}
+
+.child:hover+*+*{
+    filter: brightness(0.15);
+    transform: rotatey(13deg) scale(1.03);
+}
+
+.child:has(+:hover){
+    filter: brightness(0.3);
+    transform: rotatey(-16deg) scale(1.12);
+    z-index: 0;
+}
+
+.child:has(+*+:hover){
+    filter: brightness(0.15);
+    transform: rotatey(-13deg) scale(1.03);
+}

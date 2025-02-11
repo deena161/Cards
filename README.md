@@ -8,7 +8,7 @@
 <h3>&nbsp;&nbsp;&nbsp; Introduction:</h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔎 A sleek and fully responsive card slider built using pure CSS, leveraging pseudo-classes, transform, filter, and transition properties for a smooth and interactive user experience - no JavaScript required!</p>
 <h3>&nbsp;&nbsp;&nbsp; Features:</h3>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ✅ CSS Pseudo-classes for selecting neighboring cards dynamically. <br> ✅Filter Property for brightness adjustments, enhancing depth effects.<br> ✅Transform Property for responsive, animated movements.<br> ✅Transition Property for smooth and natural animations.<br>  ✅Fully Responsive Design that adapts to different screen sizes. <br>✅No JavaScript – Just HTML &amp; CSS!</p>
+<p>✅ CSS Pseudo-classes for selecting neighboring cards dynamically. <br> ✅Filter Property for brightness adjustments, enhancing depth effects.<br> ✅Transform Property for responsive, animated movements.<br> ✅Transition Property for smooth and natural animations.<br>  ✅Fully Responsive Design that adapts to different screen sizes. <br>✅No JavaScript – Just HTML &amp; CSS!</p>
 
 <h2>Skills</h2>
 <a href="https://devdocs.io/c/" target="_blank" cursor:="" pointer;=""><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="50px" height="50px" title="C"></a>
